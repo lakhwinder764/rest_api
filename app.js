@@ -47,11 +47,11 @@ app.post('/api/create-checkout-session', async (req, res) => {
       },
     ],
     payment_method_types: ['card'],
-    success_url: 'http://localhost:3000/success',
-    cancel_url: 'http://localhost:3000/cart',
+    success_url: 'https://my--gilded-clafoutis-99e744.netlify.app',
+    cancel_url: 'https://my--gilded-clafoutis-99e744.netlify.app',
   });
   res.json({ id: session.id });
 });
-app.listen(7000, '0.0.0.0', () => {
+app.listen(7000, () => {
   console.info('server started');
 });
